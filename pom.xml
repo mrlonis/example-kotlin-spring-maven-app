@@ -133,6 +133,21 @@
               <endWithNewline/>
             </format>
           </formats>
+          <kotlin>
+            <includes>
+              <include>src/main/kotlin/**/*.kt</include>
+              <include>src/test/kotlin/**/*.kt</include>
+            </includes>
+            <ktfmt>
+              <version>0.54</version>
+              <style>KOTLINLANG</style>
+              <maxWidth>120</maxWidth>
+              <blockIndent>4</blockIndent>
+              <continuationIndent>8</continuationIndent>
+              <removeUnusedImports>true</removeUnusedImports>
+              <manageTrailingCommas>true</manageTrailingCommas>
+            </ktfmt>
+          </kotlin>
           <pom>
             <includes>
               <include>pom.xml</include>
